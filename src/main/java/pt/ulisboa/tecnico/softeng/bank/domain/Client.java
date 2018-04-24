@@ -50,4 +50,8 @@ public class Client {
 		this.age = age;
 	}
 
+	public String getBankId() {
+	    return bank.getCode();
+    }
+
 }

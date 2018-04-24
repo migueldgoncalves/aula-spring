@@ -69,6 +69,16 @@ public class Bank {
 		return this.clients;
 	}
 
+	public Client getClientById(String id) {
+        for (Client client : clients) {
+            if (client.getId().equals(id)) {
+                return client;
+            }
+        }
+        return null;
+    }
+
+
 	public void setClients(Set<Client> clients) {
 		this.clients = clients;
 	}
